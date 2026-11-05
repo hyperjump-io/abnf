@@ -1,0 +1,49 @@
+{
+  "name": "@hyperjump/abnf",
+  "version": "0.1.0",
+  "description": "Compile ABNF grammars into regular expressions",
+  "keywords": [
+    "ABNF",
+    "RFC5234",
+    "RFC-5234",
+    "RFC7405",
+    "RFC-7405",
+    "regular expression",
+    "regex",
+    "grammar"
+  ],
+  "author": "Jason Desrosiers <jdesrosi@gmail.com>",
+  "license": "MIT",
+  "repository": "github:hyperjump-io/abnf",
+  "funding": {
+    "type": "github",
+    "url": "https://github.com/sponsors/hyperjump-io"
+  },
+  "type": "module",
+  "files": [
+    "src/**/*.js",
+    "src/**/*.d.ts",
+    "!src/**/*.test.js"
+  ],
+  "exports": {
+    ".": {
+      "types": "./src/index.d.ts",
+      "default": "./src/index.js"
+    }
+  },
+  "scripts": {
+    "lint": "oxlint",
+    "test": "vitest run",
+    "type-check": "tsc --noEmit",
+    "version": "node scripts/version-docs.js && git add website"
+  },
+  "devDependencies": {
+    "@stylistic/eslint-plugin": "*",
+    "@types/node": "*",
+    "@vitest/coverage-v8": "*",
+    "oxlint": "*",
+    "oxlint-tsgolint": "*",
+    "typescript": "*",
+    "vitest": "*"
+  }
+}

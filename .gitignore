@@ -1,0 +1,8 @@
+node_modules/
+coverage/
+scratch/
+benchmark/
+TODO*
+
+# Downloaded by `vale sync`
+.vale/
